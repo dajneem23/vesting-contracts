@@ -1,3 +1,31 @@
-[submodule "lib/forge-std"]
+[submodule "openzeppelin-contracts"]
+	path = lib/openzeppelin-contracts
+	url = https://github.com/OpenZeppelin/openzeppelin-contracts.git
+[submodule "forge-std"]
 	path = lib/forge-std
-	url = https://github.com/foundry-rs/forge-std
+	url = https://github.com/foundry-rs/forge-std.git
+[submodule "openzeppelin-contracts-upgradeable"]
+	path = contracts/openzeppelin-contracts-upgradeable
+	url = https://github.com/OpenZeppelin/openzeppelin-contracts-upgradeable.git
+[submodule "uniswap-hooks"]
+	path = lib/uniswap-hooks
+	url = https://github.com/OpenZeppelin/uniswap-hooks.git
+[submodule "openzeppelin-community-contracts"]
+	path = lib/openzeppelin-community-contracts
+	url = https://github.com/OpenZeppelin/openzeppelin-community-contracts.git
+[submodule "cairo-contracts"]
+	path = lib/cairo-contracts
+	url = https://github.com/OpenZeppelin/cairo-contracts.git
+[submodule "ethernaut"]
+	path = lib/ethernaut
+	url = https://github.com/OpenZeppelin/ethernaut.git
+[submodule "contracts-wizard"]
+	path = lib/contracts-wizard
+	url = https://github.com/OpenZeppelin/contracts-wizard.git
+[submodule "rust-contracts-stylus"]
+	path = lib/rust-contracts-stylus
+	url = https://github.com/OpenZeppelin/rust-contracts-stylus.git
+
+[submodule "lib/openzeppelin-contracts"]
+	path = lib/openzeppelin-contracts
+	url = https://github.com/OpenZeppelin/openzeppelin-contracts.git

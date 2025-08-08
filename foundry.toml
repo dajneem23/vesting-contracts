@@ -1,6 +1,58 @@
 [profile.default]
-src = "src"
+auto_detect_solc = true
+src = "contracts"
 out = "out"
 libs = ["lib"]
+cache = true
+cache_path = 'cache'
+optimizer = true
+optimize = true
+optimize_runs = 200
+remappings = ['@openzeppelin/=lib/openzeppelin-contracts/']
+fs_permissions = [{ access = "read", path = "./"}]
+[fmt]
+line_length = 120
+tab_width = 4
+bracket_spacing=false
+int_types = "long"
+func_attrs_with_params_multiline = false
+quote_style = "double"
+number_underscore = "thousands"
+multiline_func_header = "params_first"
+single_line_statement_blocks = 'preserve'
+variable_override_spacing = true
+wrap_comments = false
+ignore = []
 
-# See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
+
+[profile.hardhat]
+src = "contracts"
+out = "artifacts"
+libs = ["node_modules"]
+
+[profile.zksync]
+libs = ['lib']
+fallback_oz = true
+mode = "3"
+match_test="test/zksync/**.sol"
+no_match_test="test/**.sol"
+
+
+[rpc_endpoints]
+zksync = "https://rpc.ankr.com/zksync_era"
+mainnet = "https://eth.llamarpc.com"
+blast = "https://rpc.ankr.com/blast"
+optimism = "https://mainnet.optimism.io"
+fantom = "https://fantom-pokt.nodies.app"
+arbitrum = "https://arbitrum.llamarpc.com"
+bsc = "https://binance.llamarpc.com"
+moonriver = "https://moonriver.public.blastapi.io"
+gnosis = "https://gnosis-mainnet.public.blastapi.io"
+avalanche = "https://avax.meowrpc.com"
+polygon = "https://rpc.ankr.com/polygon"
+celo = "https://rpc.ankr.com/celo"
+base = "https://developer-access-mainnet.base.org"
+linea = "https://linea.drpc.org"
+mantle = "https://rpc.mantle.xyz"
+sonic = "https://rpc.soniclabs.com"
+
