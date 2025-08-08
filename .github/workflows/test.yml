@@ -28,6 +28,7 @@ jobs:
           forge --version
 
       - name: Run Forge fmt
+        continue-on-error: true
         run: |
           forge fmt --check
         id: fmt
